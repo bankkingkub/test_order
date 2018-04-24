@@ -54,6 +54,7 @@
             android:paddingTop="20dp">
 
             <Button
+                android:onClick="onclick_regis"
                 android:id="@+id/regiter_register"
                 android:layout_width="130dp"
                 android:layout_height="45dp"
