@@ -10,7 +10,6 @@ import android.widget.Toast;
 public class chat_test extends AppCompatActivity {
     String name;
     String user;
-    public static final String URL = "http://localhost/FoodOrder_DB/connect.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

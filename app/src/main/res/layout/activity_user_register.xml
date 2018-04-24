@@ -19,12 +19,13 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <EditText
+            <TextView
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:text="ID" />
 
             <EditText
+                android:id="@+id/register_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center" />
@@ -35,12 +36,13 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <EditText
+            <TextView
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:text="PW" />
 
             <EditText
+                android:id="@+id/register_pw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center" />

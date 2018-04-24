@@ -25,7 +25,6 @@ public class home_user extends AppCompatActivity {
 
     public void AddClick(View view) {
         Map<String, Object> value = new HashMap<String, Object>();
-        value.put("test","putdata");
         myRef.updateChildren(value);
     }
 
