@@ -1,5 +1,6 @@
 package com.example.work.test_order;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,7 +31,7 @@ public class chat_test extends AppCompatActivity {
     }
 
     public void onclick_register(View view) {
-        setContentView(R.layout.activity_user_register);
-
+        Intent intent = new Intent(this, user_register.class);
+        startActivity(intent);
     }
 }

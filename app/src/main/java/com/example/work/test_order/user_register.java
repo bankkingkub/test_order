@@ -22,7 +22,7 @@ public class user_register extends AppCompatActivity {
     }
 
     public void onclick_regis(View view) {
-        if (!emptyValidate(register_pw, register_user)) {
+        if (emptyValidate(register_pw, register_user)) {
             Toast.makeText(this, "empty", Toast.LENGTH_SHORT).show();
 
         } else {
@@ -34,6 +34,6 @@ public class user_register extends AppCompatActivity {
     private boolean emptyValidate(EditText register_pw, EditText register_user) {
         String user = register_user.getText().toString();
         String password = register_pw.getText().toString();
-        return (register_user.equals("") && register_pw.equals(""));
+        return (password.matches("") && user.matches(""));
     }
 }
