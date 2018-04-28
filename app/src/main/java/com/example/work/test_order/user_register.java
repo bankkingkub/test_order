@@ -48,17 +48,20 @@ public class user_register extends AppCompatActivity {
         String user = register_user.getText().toString();
         String password = register_pw.getText().toString();
         return (password.matches("") && user.matches(""));
+
     }
 
     public void register_insert() {
         StringRequest request = new StringRequest(StringRequest.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.d("a","onReasponse");
 
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Log.d("a","onError");
 
             }
         }){
@@ -67,11 +70,12 @@ public class user_register extends AppCompatActivity {
                 Map<String, String> params = new HashMap<>();
                 params.put("id",register_user.getText().toString());
                 params.put("password",register_pw.getText().toString());
-                Log.d("a","Inhasmap");
+                Log.d("a","indata");
                 return params;
 
             }
         };
         Volley.newRequestQueue(this).add(request);
+        Log.d("a","send context in");
     }
 }
